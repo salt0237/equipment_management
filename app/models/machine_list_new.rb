@@ -1,0 +1,2 @@
+class MachineListNew < ApplicationRecord
+end

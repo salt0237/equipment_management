@@ -1,0 +1,33 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hard: MyText
+  CPU: MyText
+  HDD: MyText
+  memory: MyText
+  OS: MyText
+  IP: MyText
+  grade: MyText
+  namber: MyText
+  name: MyText
+  place: MyText
+  power: MyText
+  drive: MyText
+  day: MyText
+  memo: MyText
+
+two:
+  hard: MyText
+  CPU: MyText
+  HDD: MyText
+  memory: MyText
+  OS: MyText
+  IP: MyText
+  grade: MyText
+  namber: MyText
+  name: MyText
+  place: MyText
+  power: MyText
+  drive: MyText
+  day: MyText
+  memo: MyText

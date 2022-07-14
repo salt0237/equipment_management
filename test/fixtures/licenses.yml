@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  license_id: MyText
+  name: MyText
+  namber: MyText
+  license_key: MyText
+  memo: MyText
+
+two:
+  license_id: MyText
+  name: MyText
+  namber: MyText
+  license_key: MyText
+  memo: MyText
