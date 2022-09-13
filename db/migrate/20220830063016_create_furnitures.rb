@@ -7,6 +7,7 @@ class CreateFurnitures < ActiveRecord::Migration[6.0]
       t.text :place
       t.text :day
       t.text :memo
+      t.boolean :flag
 
       t.timestamps
     end

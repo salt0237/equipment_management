@@ -7,7 +7,7 @@ module API
     end
 
     def create
-      data = params[:data].permit(:name, :place, :memo)
+      data = params[:data].permit(:name, :place,:quantity_used,:quantity_available, :memo,:day,:flag)
       @data = Consumable.create(data)#params[:パラメータ名]でデータを受け取る。
       render json: @data
     end
@@ -19,7 +19,8 @@ module API
 
     def update
       @data = Consumable.find(params[:id])
-      @data.update_attributes(data: params[:data])
+      data = params[:data].permit(:name, :place,:quantity_used,:quantity_available, :memo,:day,:flag)
+      @data.update(data)
       render json: @data
     end
 
@@ -33,5 +34,11 @@ module API
         #サーバーが要求を理解できたが、処理ができなかった。
       end
     end
+
+    def consmable_params
+      params.require(:consumable).permit(:name, :place,:quantity_used,:quantity_available, :memo,:day,:flag)
+    end
+
   end
 end
+

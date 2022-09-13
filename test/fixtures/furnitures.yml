@@ -7,6 +7,7 @@ one:
   place: MyText
   day: MyText
   memo: MyText
+  flag: false
 
 two:
   name: MyText
@@ -15,3 +16,4 @@ two:
   place: MyText
   day: MyText
   memo: MyText
+  flag: false

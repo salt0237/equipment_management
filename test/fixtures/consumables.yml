@@ -4,8 +4,10 @@ one:
   name: MyText
   place: MyText
   memo: MyText
+  flag: false
 
 two:
   name: MyText
   place: MyText
   memo: MyText
+  flag: false

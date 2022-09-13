@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_07_072013) do
+ActiveRecord::Schema.define(version: 2022_09_12_090411) do
 
   create_table "admins", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "provider", default: "email", null: false
@@ -85,23 +85,16 @@ ActiveRecord::Schema.define(version: 2022_07_07_072013) do
     t.text "name"
     t.text "place"
     t.text "memo"
+    t.boolean "flag"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "day"
+    t.string "quantity_used"
+    t.string "quantity_available"
   end
 
   create_table "domains", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "equipment", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.text "name"
-    t.text "number"
-    t.text "person"
-    t.text "place"
-    t.text "day"
-    t.text "memo"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -133,6 +126,7 @@ ActiveRecord::Schema.define(version: 2022_07_07_072013) do
     t.text "place"
     t.text "day"
     t.text "memo"
+    t.boolean "flag"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -143,6 +137,7 @@ ActiveRecord::Schema.define(version: 2022_07_07_072013) do
     t.text "number"
     t.text "license_key"
     t.text "memo"
+    t.boolean "flag"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

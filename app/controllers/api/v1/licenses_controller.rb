@@ -7,7 +7,7 @@ module API
     end
 
     def create
-      data = params[:data].permit(:license_id, :name, :number, :license_key, :memo)
+      data = params[:data].permit(:license_id, :name, :number, :license_key, :memo,:flag)
       @data = License.create(data)#params[:パラメータ名]でデータを受け取る。
       render json: @data
     end
@@ -19,7 +19,8 @@ module API
 
     def update
       @data = License.find(params[:id])
-      @data.update_sttributes(data: params[:data])
+      data = params[:data].permit(:license_id, :name, :number, :license_key, :memo,:flag)
+      @data.update(data)
       render json: @data
     end
 

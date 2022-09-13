@@ -4,6 +4,7 @@ class CreateConsumables < ActiveRecord::Migration[6.0]
       t.text :name
       t.text :place
       t.text :memo
+      t.boolean :flag
 
       t.timestamps
     end

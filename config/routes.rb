@@ -15,16 +15,19 @@ Rails.application.routes.draw do
       get 'furniture', to:'furnitures#index'
       post 'furniture', to: 'furnitures#create'
       get 'furniture/:id', to: 'furnitures#read'
+      put 'furniture/:id', to: 'furnitures#update'
       delete 'furniture/:id', to: 'furnitures#destroy'
 #license
       get 'license', to:'licenses#index'
       post 'license', to: 'licenses#create'
       get 'license/:id', to: 'licenses#read'
+      put 'license/:id', to: 'licenses#update'
       delete 'license/:id', to: 'licenses#destroy'
 #consumable
       get 'consumable', to:'consumables#index'
       post 'consumable', to: 'consumables#create'
       get 'consumable/:id', to: 'consumables#read'
+      put 'consumable/:id', to: 'consumables#update'
       delete 'consumable/:id', to: 'consumables#destroy'
 
     end

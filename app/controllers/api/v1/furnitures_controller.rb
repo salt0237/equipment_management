@@ -7,7 +7,7 @@ module API
     end
 
     def create
-      data = params[:data].permit(:name,:number,:person,:place,:day,:memo)
+      data = params[:data].permit(:name,:number,:person,:place,:day,:memo,:flag)
       @data = Furniture.create(data)#params[:パラメータ名]でデータを受け取る。
       render json: @data
     end
@@ -19,7 +19,8 @@ module API
 
     def update
       @data = Furniture.find(params[:id])
-      @data.update_attributes(data: params[:data])
+      data = params[:data].permit(:name,:number,:person,:place,:day,:memo,:flag,:apdated_at)
+      @data.update(data)
       render json: @data
     end
 

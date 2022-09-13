@@ -6,6 +6,7 @@ class CreateLicenses < ActiveRecord::Migration[6.0]
       t.text :number
       t.text :license_key
       t.text :memo
+      t.boolean :flag
 
       t.timestamps
     end

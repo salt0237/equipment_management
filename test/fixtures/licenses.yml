@@ -3,13 +3,15 @@
 one:
   license_id: MyText
   name: MyText
-  namber: MyText
+  number: MyText
   license_key: MyText
   memo: MyText
+  flag: false
 
 two:
   license_id: MyText
   name: MyText
-  namber: MyText
+  number: MyText
   license_key: MyText
   memo: MyText
+  flag: false
